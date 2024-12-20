@@ -1,15 +1,15 @@
 
 import { useState } from 'react';
 import './App.css';
-import About from './components/About';
+// import About from './components/About';
 import NavBar from './components/NavBar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom"
+// import {
+//   BrowserRouter as Router,
+//   Route,
+//   Routes,
+// } from "react-router-dom"
 
 
 function App() {
@@ -43,17 +43,18 @@ function App() {
 
   return (
     <>
-    <Router>
+    {/* <Router> */}
     <Alert alert={alert}/>
   <NavBar title="TextUtils" aboutText="About Us" hometext="Home" mode={Mode} toggleMode={toggleMode}/>
    <div className="container my-3">
-   <Routes>
-       <Route path="/about" element={<About/>}/>
-       <Route path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={Mode} />} />
-   </Routes>
+   <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={Mode} />
+   {/* <Routes> */}
+       {/* <Route path="/about" element={<About/>}/> */}
+       {/* <Route path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={Mode} />} /> */}
+   {/* </Routes> */}
     </div>
   
-  </Router>
+  {/* </Router> */}
   </>
   );
 }
