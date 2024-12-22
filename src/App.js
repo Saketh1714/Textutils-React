@@ -45,7 +45,7 @@ function App() {
     <>
     <Router>
     <Alert alert={alert}/>
-  <NavBar title="TextUtils" aboutText="About Us" hometext="Home" mode={Mode} toggleMode={toggleMode} key={new Date()}/>
+  <NavBar title="TextUtils" aboutText="About Us"  mode={Mode} toggleMode={toggleMode} key={new Date()}/>
    <div className="container my-3">
    {/* <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={Mode} /> */}
    <Routes>
